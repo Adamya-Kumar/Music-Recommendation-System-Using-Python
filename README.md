@@ -31,7 +31,11 @@ The model was trained on a synthetic dataset containing the following statistics
 | max        | 16600.000  | 2020.000   | 41.490000  | 29.020000  | 10.220000   | 10.570000    |
 
 ## Model Accuracy
-The model achieved an accuracy score of **X%** (replace with actual score from the notebook).
+The model achieved an accuracy score of **1.0** (100% accurate).
+```
+    score = accuracy_score(y_test, predictions)
+    score
+```
 
 ## Additional Notes
 - The trained model is saved as `music-recommadation-system.joblib`.
