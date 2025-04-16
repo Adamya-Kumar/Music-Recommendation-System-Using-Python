@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="age <= 30.5\ngini = 0.692\nsamples = 8000\nvalue = [783, 3908, 1301, 1247, 761]\nclass = Classical", fillcolor="#ccf5b2"] ;
+1 [label="gender <= 0.5\ngini = 0.735\nsamples = 4092\nvalue = [783, 0, 1301, 1247, 761]\nclass = Dance", fillcolor="#fbfffe"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 24.5\ngini = 0.469\nsamples = 2084\nvalue = [783, 0, 1301, 0, 0]\nclass = Dance", fillcolor="#b0f5e8"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1301\nvalue = [0, 0, 1301, 0, 0]\nclass = Dance", fillcolor="#39e5c5"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 783\nvalue = [783, 0, 0, 0, 0]\nclass = Acoustic", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="age <= 24.5\ngini = 0.471\nsamples = 2008\nvalue = [0, 0, 0, 1247, 761]\nclass = HipHop", fillcolor="#b3b2f5"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1247\nvalue = [0, 0, 0, 1247, 0]\nclass = HipHop", fillcolor="#3c39e5"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 761\nvalue = [0, 0, 0, 0, 761]\nclass = Jazz", fillcolor="#e539c0"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3908\nvalue = [0, 3908, 0, 0, 0]\nclass = Classical", fillcolor="#7be539"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
