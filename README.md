@@ -41,4 +41,3 @@ The model achieved an accuracy score of **1.0** (100% accurate).
 - The trained model is saved as `music-recommadation-system.joblib`.
 - The decision tree is exported in `.dot` format for visualization.
 
-Feel free to explore the code and modify it to suit your needs!
